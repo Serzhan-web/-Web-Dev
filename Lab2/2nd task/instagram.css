@@ -42,8 +42,8 @@ img {
 }
 .logo-section p span {
     background: linear-gradient(90deg, #dc872c 0%, #e6683c 25%, #e73b54 50%, #f30765 75%, #f700a9 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    override-colors: transparent;
 }
 
 .instagram_logo2 {
