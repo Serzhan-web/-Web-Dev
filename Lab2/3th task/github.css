@@ -73,8 +73,12 @@ header .sign-up:hover {
 .container {
     margin-top: -10px;
     margin-left: 320px;
-    margin-right: 0;
-    padding: 0;
+}
+
+.search {
+    width: 50px;
+    height: 30px;
+    border: 1px solid #d1d5da;
 }
 
 
