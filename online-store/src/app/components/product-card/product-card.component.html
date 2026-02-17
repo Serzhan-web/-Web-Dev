@@ -1,0 +1,26 @@
+<div class="card">
+  <div class="gallery">
+    <img [src]="product.images[selectedImgIndex]" class="main-img">
+    <div class="thumbs">
+      <img *ngFor="let img of product.images; let i = index" 
+           [src]="img" (click)="selectedImgIndex = i"
+           [class.active]="i === selectedImgIndex">
+    </div>
+  </div>
+
+  <h3>{{ product.name }}</h3>
+  <p class="description">{{ product.description }}</p>
+  
+  <div class="footer">
+    <span class="price">{{ product.price | number }} ₸</span>
+    <span class="rating">⭐ {{ product.rating }}</span>
+  </div>
+
+  <div class="actions">
+    <a [href]="product.link" target="_blank" class="buy">Kaspi.kz</a>
+    <div class="share">
+      <a [href]="shareWA" target="_blank" class="wa">WA</a>
+      <a [href]="shareTG" target="_blank" class="tg">TG</a>
+    </div>
+  </div>
+</div>
